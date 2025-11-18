@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bangalore Home Price Prediction</title>
+
+  <!-- Roboto + Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="bg-image" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="brand">
+      <h1>Bangalore Home Price</h1>
+      <p class="subtitle">Quick estimate for residential properties</p>
+    </header>
+
+    <section class="card" role="region" aria-labelledby="card-title">
+      <h2 id="card-title" class="card-title">Estimate price</h2>
+
+      <form id="predictForm" class="grid">
+        <!-- Area -->
+        <div class="field">
+          <label for="uiSqft">Area (Square Feet)</label>
+          <input id="uiSqft" class="input" type="number" min="100" step="1" value="1000" />
+        </div>
+
+        <!-- BHK -->
+        <div class="field">
+          <label>BHK</label>
+          <div class="toggle-group" role="radiogroup" aria-label="BHK">
+            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+            <label for="radio-bhk-1">1</label>
+
+            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+            <label for="radio-bhk-2">2</label>
+
+            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+            <label for="radio-bhk-3">3</label>
+
+            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+            <label for="radio-bhk-4">4</label>
+
+            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+            <label for="radio-bhk-5">5</label>
+          </div>
+        </div>
+
+        <!-- Bath -->
+        <div class="field">
+          <label>Bath</label>
+          <div class="toggle-group" role="radiogroup" aria-label="Bathrooms">
+            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+            <label for="radio-bath-1">1</label>
+
+            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+            <label for="radio-bath-2">2</label>
+
+            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+            <label for="radio-bath-3">3</label>
+
+            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+            <label for="radio-bath-4">4</label>
+
+            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+            <label for="radio-bath-5">5</label>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="field full">
+          <label for="uiLocations">Location</label>
+          <select id="uiLocations" class="select" aria-label="Location">
+            <option value="" disabled selected>Choose a Location</option>
+            <!-- loaded dynamically by app.js -->
+          </select>
+        </div>
+
+        <!-- Buttons & result -->
+        <div class="actions full">
+          <button id="estimateBtn" class="btn" type="button" onclick="onClickedEstimatePrice()">Estimate Price</button>
+          <div id="uiEstimatedPrice" class="result" aria-live="polite"></div>
+        </div>
+      </form>
+
+      <footer class="disclaimer">
+        <small>Note: This is a demo estimator. For accurate valuation consult a professional.</small>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
