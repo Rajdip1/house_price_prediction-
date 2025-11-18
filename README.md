@@ -1,6 +1,9 @@
 # Bangalore House Price Prediction
 
-A small demo web app that estimates residential home prices for Bangalore (Bengaluru) using a pre-trained ML model. The project contains a Flask backend that loads model artifacts and exposes two endpoints, a simple static HTML/JS frontend, and model/data artifacts and a Jupyter notebook used for exploration and training.
+<img width="1899" height="831" alt="Screenshot 2025-11-18 130125" src="https://github.com/user-attachments/assets/fa5075ae-9453-4479-83fa-e5def3dbaed7" />
+<img width="1919" height="1007" alt="Screenshot 2025-11-18 130226" src="https://github.com/user-attachments/assets/842044d3-2190-45d8-9680-e3b4c3a121f7" />
+<img width="1895" height="827" alt="Screenshot 2025-11-18 130204" src="https://github.com/user-attachments/assets/407ce30d-0d70-41fe-93aa-53bb4cfd74a1" />
+
 
 ## Project structure
 
