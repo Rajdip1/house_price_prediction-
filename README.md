@@ -136,16 +136,5 @@ The backend will return a float; the frontend app displays it as `Lakh`.
 - Consider serving the client from Flask (or add a small webpack / dev server) so no manual URL edits are needed.
 - Add unit tests for `util.get_estimated_price` and contract tests for the API endpoints.
 
-## License
 
-This project doesn't include an explicit license file. Add a `LICENSE` if you plan to open-source it.
 
----
-
-If you'd like, I can also:
-
-- add a `requirements.txt`,
-- update `client/app.js` to use the explicit `http://127.0.0.1:5000` URLs (so the client works when served statically), or
-- add a small `run.ps1` that creates a venv, installs dependencies, and starts the server.
-
-Tell me which of those you'd like me to do next.
