@@ -1,4 +1,6 @@
 # Bangalore House Price Prediction
+•	Built a regression model using EDA, feature engineering, and algorithm comparison to predict Bangalore housing prices.
+•	Achieved 74.46% model accuracy after hyperparameter tuning (GridSearchCV) and exported the final trained model for inference.
 
 <img width="1899" height="831" alt="Screenshot 2025-11-18 130125" src="https://github.com/user-attachments/assets/fa5075ae-9453-4479-83fa-e5def3dbaed7" />
 <img width="1919" height="1007" alt="Screenshot 2025-11-18 130226" src="https://github.com/user-attachments/assets/842044d3-2190-45d8-9680-e3b4c3a121f7" />
